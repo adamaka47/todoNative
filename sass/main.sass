@@ -1,0 +1,105 @@
+*, *::after, *::before
+	box-sizing: border-box
+
+
+body
+	font-family: monospace, 'Tahoma', sans-serif
+
+h1
+	margin: 0
+	color: #fff
+	text-align: center
+	padding-top: 100px
+	margin-bottom: 50px
+	font-size: 40px
+
+
+
+
+
+.wrapper
+	height: 100vh
+	width: 100%
+	background-color: darken(aqua, 40)
+	position: relative
+
+.app
+	padding: 30px
+	max-width: 420px
+	background-color: #fff
+	margin: auto
+	background-color: aqua
+	&-header
+		margin-bottom: 20px
+		display: flex
+		justify-content: center
+		&__int
+			padding: 10px
+			margin-right: 20px
+			outline: none
+			background-color: #222
+			color: #fff
+			border: 2px solid #af8
+			font-size: 18px
+			border-radius: 5px
+			&::placeholder
+				color: #aaa
+		&__btn
+			background-color: #ff0036
+			font-family: sans-serif
+			color: #fff
+			font-size: 17px
+			border: none
+			border: 2px solid #222
+			padding: 14px
+			outline: none
+			cursor: pointer
+			transition: 0.4s ease-in-out
+			&:hover
+				background-color: #af8
+				color: #222
+	&-body
+		border: 2px solid #222
+	&-list
+		padding: 0
+		margin: 0
+		&__item
+			display: flex
+			justify-content: space-between
+			align-items: center
+			background-color: #fff
+			border-bottom: 1px solid #999
+			padding: 15px
+		&__descr
+			font-size: 18px
+			text-shadow: 0 0px 1px aqua
+		&__rm
+			cursor: pointer
+			border: none
+			background-color: #af8
+			color: #222
+			font-size: 24px
+			padding: 5px 10px
+			transition: 0.25s linear
+			&:hover
+				box-shadow: 0 0 5px aqua
+				background-color: #222
+				color: #af8
+
+.info
+	position: absolute
+	top: 0
+	left: 0
+	font-family: monospace, sans-serif
+	color: #fff
+	background-color: darken(indigo, 20)
+	padding: 10px
+	margin: 0
+	font-size: 12px
+	max-width: 310px
+
+.cleaning
+	text-align: center
+	font-family: 'Tahoma', sans-serif
+	letter-spacing: 2px
+	font-weight: 900
